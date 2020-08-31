@@ -59,7 +59,7 @@ DEVICE_PACKAGE_OVERLAYS += device/motorola/def/overlay/device
 DEVICE_PACKAGE_OVERLAYS += vendor/sosp/overlay/CarrierConfig
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # get the rest of aosp stuff after ours
 $(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system_arm64.mk)
@@ -70,7 +70,7 @@ $(call inherit-product, device/motorola/def/device.mk)
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := omni_def
+PRODUCT_NAME := havoc_def
 PRODUCT_DEVICE := def
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola

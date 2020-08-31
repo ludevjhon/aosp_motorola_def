@@ -56,7 +56,7 @@ TARGET_BOOTANIMATION_SIZE := 1080p
 AB_OTA_UPDATER := true
 
 DEVICE_PACKAGE_OVERLAYS += device/motorola/def/overlay/device
-DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
+DEVICE_PACKAGE_OVERLAYS += vendor/sosp/overlay/CarrierConfig
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)

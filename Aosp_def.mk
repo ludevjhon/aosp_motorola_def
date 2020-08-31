@@ -29,7 +29,7 @@ VENDOR_EXCEPTION_PATHS := omni \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Get the prebuilt list of APNs
-$(call inherit-product, vendor/omni/config/gsm.mk)
+
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -59,7 +59,7 @@ DEVICE_PACKAGE_OVERLAYS += device/motorola/def/overlay/device
 DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/common_full_phone.mk)
 
 # get the rest of aosp stuff after ours
 $(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system_arm64.mk)

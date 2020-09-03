@@ -19,7 +19,7 @@
 # product configuration (apps).
 #
 
-VENDOR_EXCEPTION_PATHS := omni \
+VENDOR_EXCEPTION_PATHS := bootleggers \
     motorola \
     gapps \
     microg

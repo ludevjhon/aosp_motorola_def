@@ -24,7 +24,7 @@ LOCAL_RESOURCE_DIR := \
 LOCAL_PROGUARD_ENABLED := disabled
 LOCAL_DEX_PREOPT := false
 
-include frameworks/base/packages/SettingsLib/common.mk
+include fr
 
 include $(BUILD_PACKAGE)
 

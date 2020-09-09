@@ -61,12 +61,12 @@ public class ScreenOffGestureSettingsFragment extends PreferenceFragment {
         });*/
 
         mProximitySensor = (SwitchPreference) findPreference("proximity_sensor");
-        mProximitySensor.setChecked(Settings.System.getInt(getActivity().getContentResolver(), Settings.System.OMNI_DEVICE_PROXI_CHECK_ENABLED, 1) == 1);
+        mProximitySensor.setChecked(Settings.System.getInt(getActivity().getContentResolver(), 
         mProximitySensor.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object objValue) {
                 boolean value = (Boolean) objValue;
-                Settings.System.putInt(getActivity().getContentResolver(), Settings.System.OMNI_DEVICE_PROXI_CHECK_ENABLED, value ? 1 : 0);
+                 
                 return true;
             }
         });

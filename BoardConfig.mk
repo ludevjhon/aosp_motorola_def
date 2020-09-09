@@ -19,7 +19,7 @@
 # product configuration (apps).
 #
 DEVICE_PATH := device/motorola/def
-
+SELINUX_IGNORE_NEVERALLOWS := true
 include $(DEVICE_PATH)/BoardConfigGsi.mk
 
 TARGET_NO_BOOTLOADER := true
